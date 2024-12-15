@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #2B2E4A;
+}
+
+header {
+    background: linear-gradient(90deg, #2B2E4A 55%, #E84545 30%, #903749 10%, #53354A 5%);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-image: url("Images/ArrPlan-Montagne9.jpg");
+    background-repeat: repeat;
+    background-position-x: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Containers headers */
+.header-container1, .header-container11, .header-container2, .header-container3, .header-container4, .header-container5, .header-container6, .header-container7, .header-container8 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-container1 {
+    background-image: url('Images/ArrPlan-Chateau1.jpg');
+    background-position: center;
+}
+
+.header-container11 {
+    background-image: url('Images/craie11.png');
+    background-position: center;
+}
+
+.header-container2 {
+    background-image: url('Images/Formations2.jpg');
+    background-position: center;
+}
+
+.header-container3 {
+    background-image: url('Images/Diplomes3.jpg');
+    background-position: center;
+}
+
+.header-container4 {
+    background-image: url('Images/Exp4.jpg');
+    background-position: center;
+}
+
+.header-container5 {
+    background-image: url('Images/code5.jpg');
+    background-position: center;
+}
+
+.header-container6 {
+    background-image: url('Images/rouge-bleu67.png');
+    background-position: center;
+}
+
+.header-container7 {
+    background-image: url('Images/rouge-bleu67.png');
+    background-position: center;
+}
+
+.header-container8 {
+    background-image: url('Images/confidentialite8.jpg');
+    background-position: center;
+}
+
+/* Photo de profil */
+.photo-profil {
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 20px;
+}
+
+/* Menu de navigation*/
+nav {
+    background-color: #53354A;
+    padding: 10px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-menu a {
+    color: #E84545;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #53354A;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*menu déroulant */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #2B2E4A;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #E84545;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #53354A;
+    color: #fff;
+}
+
+/* menu au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*menu sticky */
+main {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #E84545;
+    border-bottom: 2px solid #53354A;
+    padding-bottom: 5px;
+}
+
+a {
+    color: #E84545;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.texte {
+    color: #ffffff;
+    text-decoration: none;
+}   
+
+/* Skills section */
+.skills {
+    padding: 20px;
+    background-color: #2B2E4A;
+    color: #fff;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #E84545;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: #53354A;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.flex-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #E84545;
+}
+
+.flex-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-item li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.flex-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: #2B2E4A;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #E84545;
+    font-size: 14px;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #53354A;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.1);
+    background-color: #E84545;
+}
+
+footer .social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintient les proportions de l'image */
+    border-radius: 50%;
+}
+
+
+
+/* Code blocks */
+pre {
+    background-color: #000000;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Consolas, 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+pre code {
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #096a09;
+}
+
+/*Media*/
+@media (max-width: 1240px) {
+    main section {
+      min-width: 45%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      flex-direction: column;
+    }
+  }
